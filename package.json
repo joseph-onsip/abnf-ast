@@ -21,6 +21,7 @@
     "pegjs-utils": "git://github.com/joseph-onsip/pegjs-utils"
   },
   "devDependencies": {
-    "pegjs": "^0.8.0"
+    "pegjs": "^0.8.0",
+    "tape": "^3.2.0"
   }
 }
