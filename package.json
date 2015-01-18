@@ -18,5 +18,8 @@
   "homepage": "https://github.com/joseph-onsip/abnf-ast",
   "dependencies": {
     "pegjs-utils": "git://github.com/joseph-onsip/pegjs-utils"
+  },
+  "devDependencies": {
+    "pegjs": "^0.8.0"
   }
 }
