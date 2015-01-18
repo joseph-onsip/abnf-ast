@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "peg": "pegjs src/abnf.pegjs lib/abnf-parser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
