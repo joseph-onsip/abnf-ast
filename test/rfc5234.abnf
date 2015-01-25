@@ -26,7 +26,9 @@ concatenation  =  repetition *(1*c-wsp repetition)
 
 repetition     =  [repeat] element
 
-repeat         =  1*DIGIT / (*DIGIT "*" *DIGIT)
+; CHANGE order in reverse for greedy matching
+; see https://github.com/for-GET/core-pegjs/commit/f983ef4d75f442bd4405319c981f1cd05f7136a4
+repeat         =  (*DIGIT "*" *DIGIT) / 1*DIGIT
 
 element        =  rulename / group / option /
                   char-val / num-val / prose-val
