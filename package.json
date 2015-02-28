@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm run peg",
     "peg": "pegjs src/abnf.pegjs lib/abnf-parser.js",
     "tape": "tape test/*.js",
     "test": "npm run peg && npm run tape"
