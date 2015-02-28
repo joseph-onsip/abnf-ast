@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/joseph-onsip/abnf-ast/issues"
   },
-  "homepage": "https://github.com/joseph-onsip/abnf-ast"
+  "homepage": "https://github.com/joseph-onsip/abnf-ast",
+  "dependencies": {
+    "pegjs-utils": "git://github.com/joseph-onsip/pegjs-utils"
+  }
 }
