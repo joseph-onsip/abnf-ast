@@ -23,7 +23,8 @@ serializers.rule = function rule (node) {
     throw new Error('defined_as must be =');
   }
 
-  return cleanRulename(node.rulename) + ' ' + node.defined_as + ' ' + serialize(node.elements);
+  var prefix = cleanRulename(node.rulename) + '\n\t' + node.defined_as + ' ';
+  return prefix + propSerializer('elements', '\n\t/ ')(node.elements) + '\n';
 };
 
 function cleanRulename (rulename) {
