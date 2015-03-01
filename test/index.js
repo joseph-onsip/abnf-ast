@@ -13,12 +13,9 @@ test('RFC 5234', function (t) {
   t.equal(ast.rules.length, 37, 'has 37 rules');
   t.end();
 
-  console.log(JSON.stringify(ast, null, 2));
   var serialize = require('../serialize');
   var pegjs = serialize(ast);
   console.log(pegjs);
-  return;
   var parser = require('pegjs').buildParser(pegjs);
   var dogfood = parser.parse(abnf);
-  console.log(dogfood);
 });
