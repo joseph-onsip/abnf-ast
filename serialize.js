@@ -3,7 +3,7 @@ module.exports = serialize;
 function serialize (node) {
   if (typeof node === 'string') {
     // the only place this happens is when referencing another rule
-    return cleanRulename(node)
+    return cleanRulename(node) + ': ' + cleanRulename(node)
   }
   return serializers[node.type](node);
 }
