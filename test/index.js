@@ -3,6 +3,7 @@ var abnfAST = require('../');
 
 var fs = require('fs');
 var path = require('path');
+var bonsai = require('pegjs-bonsai')
 
 test('RFC 5234', function (t) {
   var filename = 'rfc5234.abnf';
@@ -16,6 +17,7 @@ test('RFC 5234', function (t) {
   var serialize = require('../serialize');
   var pegjs = serialize(ast);
   console.log(pegjs);
-  var parser = require('pegjs').buildParser(pegjs);
+  var parser = require('pegjs').buildParser(pegjs, {plugins: [bonsai], bonsaiPlugin: { exposeTextAs: '$text' }});
   var dogfood = parser.parse(abnf);
+  console.log(JSON.stringify(dogfood, null, 2));
 });
