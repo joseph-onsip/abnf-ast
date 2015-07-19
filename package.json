@@ -19,7 +19,9 @@
     "url": "https://github.com/joseph-onsip/abnf-ast/issues"
   },
   "homepage": "https://github.com/joseph-onsip/abnf-ast",
-  "dependencies": {},
+  "dependencies": {
+    "pegjs-bonsai": "git://github.com/joseph-onsip/pegjs-bonsai#exposeTextAs"
+  },
   "devDependencies": {
     "pegjs": "^0.8.0",
     "pegjs-utils": "git://github.com/joseph-onsip/pegjs-utils",
