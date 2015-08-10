@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/joseph-onsip/abnf-ast",
   "dependencies": {
-    "pegjs-bonsai": "git://github.com/joseph-onsip/pegjs-bonsai#exposeTextAs"
+    "pegjs-bonsai": "^0.1.2"
   },
   "devDependencies": {
     "pegjs": "^0.8.0",
